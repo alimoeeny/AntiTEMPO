@@ -1,4 +1,3 @@
-﻿/// بسم الله القادر
 /// Ali Moeeny : 2006-01-20 Started
 
 using System;
