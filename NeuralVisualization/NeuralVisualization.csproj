@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A7810BDB-2A80-4312-9BA1-190A1EF81F10}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NeuralVisualization</RootNamespace>
+    <AssemblyName>NeuralVisualization</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BlockByBlock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BlockByBlock.Designer.cs">
+      <DependentUpon>BlockByBlock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContaminationHistogram.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ContaminationHistogram.Designer.cs">
+      <DependentUpon>ContaminationHistogram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InformationKinetics.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InformationKinetics.Designer.cs">
+      <DependentUpon>InformationKinetics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ISIHist.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ISIHist.Designer.cs">
+      <DependentUpon>ISIHist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MinIClust.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MinIClust.Designer.cs">
+      <DependentUpon>MinIClust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScatterPlot.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScatterPlot.Designer.cs">
+      <DependentUpon>ScatterPlot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectivityProfile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectivityProfile.Designer.cs">
+      <DependentUpon>SelectivityProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TrialByTrialHistogram.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TrialByTrialHistogram.Designer.cs">
+      <DependentUpon>TrialByTrialHistogram.cs</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BlockByBlock.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BlockByBlock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContaminationHistogram.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ContaminationHistogram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformationKinetics.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>InformationKinetics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ISIHist.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ISIHist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MinIClust.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MinIClust.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScatterPlot.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ScatterPlot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectivityProfile.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SelectivityProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrialByTrialHistogram.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TrialByTrialHistogram.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NeuralData\NeuralData.csproj">
+      <Project>{BDA7D2B2-2288-4C24-A208-D193B770D510}</Project>
+      <Name>NeuralData</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
