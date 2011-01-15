@@ -1,0 +1,3 @@
+AntiTEMPO is a bunch of C# libraries that I developed during the last couple of years of my graduate school. Initially it was not intended to be published. Now I think some of the code might be useful to others. 
+Although documentation is virtually not present, I will try to comment the code.
+You can use the code as you please, some parts of the code is inspired by GNU scientific libraries or the numerical recipes in C.  
